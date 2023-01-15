@@ -9,7 +9,7 @@ class InheritedUserModel extends InheritedWidget {
       : super(key: key, child: child);
 
   static InheritedUserModel of(BuildContext context) {
-    return (context.inheritFromWidgetOfExactType(InheritedUserModel)
+    return (context.getElementForInheritedWidgetOfExactType()
         as InheritedUserModel);
   }
 

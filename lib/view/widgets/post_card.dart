@@ -65,8 +65,8 @@ class _PostTitleSummaryAndTime extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final PostModel postData = InheritedPostModel.of(context).postData;
-    final TextStyle titleTheme = Theme.of(context).textTheme.title;
-    final TextStyle summaryTheme = Theme.of(context).textTheme.body1;
+    final TextStyle titleTheme = Theme.of(context).textTheme.titleMedium;
+    final TextStyle summaryTheme = Theme.of(context).textTheme.bodyMedium;
     final String title = postData.title;
     final String summary = postData.summary;
     final int flex = isLandscape(context) ? 5 : 3;
